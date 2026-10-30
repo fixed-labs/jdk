@@ -22,16 +22,27 @@
           cpio
           pkg-config
           freetype
+          freetype.dev
           fontconfig
+          fontconfig.dev
           cups
+          cups.dev
           alsa-lib
+          alsa-lib.dev
           libffi
+          libffi.dev
           libx11
+          libx11.dev
           libxext
+          libxext.dev
           libxrender
+          libxrender.dev
           libxrandr
+          libxrandr.dev
           libxtst
+          libxtst.dev
           libxt
+          libxt.dev
         ];
 
         env = {
