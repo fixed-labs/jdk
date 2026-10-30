@@ -10,11 +10,13 @@
       in
       {
         packages = with pkgs; [
+          temurin-bin-27
           autoconf
           gcc
           gnumake
           zip
           unzip
+          file
           perl
           wget
           cpio
@@ -31,6 +33,10 @@
           libxtst
           libxt
         ];
+
+        env = {
+          JAVA_HOME = "${pkgs.temurin-bin-27}";
+        };
       };
   };
 }
